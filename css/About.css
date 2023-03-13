@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(33, 33, 33);
+    color: rgb(240, 240, 240);
+}
+
+#aboutTitle {
+    font-size: 3em;
+}
+
+#aboutInfo {
+    font-size: 1.5em;
+}

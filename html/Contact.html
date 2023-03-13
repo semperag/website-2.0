@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="Utf-8">
+        <meta name="author" content="Adi Sempertegui">
+        <meta name="description" content="weekly blog">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adi's Website</title>
+        <link rel="stylesheet" href="../css/Contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    </head>
+    <body>
+        <div id="root">
+
+            <main> 
+                <div id="center-view">
+                    <div id="nav-placeholder"></div>
+
+                    <table id="resume">
+                        <tbody>
+                            <form action="https://formsubmit.co/adair.sempe@gmail.com" method="POST">
+                            <tr>
+                                <th class="resume-title" scope="col">
+                                    Contact me
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="name-textarea" placeholder="Name"></textarea>
+                                    <input type="hidden" name="_next" value="https://semperag.github.io/contact.html">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="email-textarea" type="email" name="email" placeholder="Email*" required></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="message-textarea" type="text" name="message" placeholder="Message*" required></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="send">
+                                    <button id="send-button" type="submit" onClick="sendMessage()">Send</button>
+                                </td>
+                            </tr>
+                            </form>
+                        </tbody>
+                    </table>
+                </div>
+
+            </main>
+
+        </div>
+    </body>
+</html>
