@@ -11,48 +11,40 @@
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     </head>
     <body>
-        <div id="root">
+        <div id="center-view">
 
-            <main> 
-                <div id="center-view">
-                    <div id="nav-placeholder"></div>
-
-                    <table id="resume">
-                        <tbody>
-                            <form action="https://formsubmit.co/adair.sempe@gmail.com" method="POST">
-                            <tr>
-                                <th class="resume-title" scope="col">
-                                    Contact me
-                                </th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea id="name-textarea" placeholder="Name"></textarea>
-                                    <input type="hidden" name="_next" value="https://semperag.github.io/contact.html">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea id="email-textarea" type="email" name="email" placeholder="Email*" required></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea id="message-textarea" type="text" name="message" placeholder="Message*" required></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td id="send">
-                                    <button id="send-button" type="submit" onClick="sendMessage()">Send</button>
-                                </td>
-                            </tr>
-                            </form>
-                        </tbody>
-                    </table>
-                </div>
-
-            </main>
-
+            <table id="resume">
+                <tbody>
+                    <form action="https://formsubmit.co/adair.sempe@gmail.com" method="POST">
+                    <tr>
+                        <th class="resume-title" scope="col">
+                            Contact me
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="name-textarea" placeholder="Name"></textarea>
+                            <input type="hidden" name="_next" value="https://semperag.github.io/contact.html">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="email-textarea" type="email" name="email" placeholder="Email*" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="message-textarea" type="text" name="message" placeholder="Message*" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="send">
+                            <button id="send-button" type="submit" onClick="sendMessage()">Send</button>
+                        </td>
+                    </tr>
+                    </form>
+                </tbody>
+            </table>
         </div>
     </body>
 </html>
