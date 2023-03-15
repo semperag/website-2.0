@@ -29,7 +29,7 @@ body {
     width: 60%;
 }
 
-.projectLink {
+.projectLink, .hello {
     background-color: rgba(245, 245, 220, 0.808);
     width: 40%;
     height: 70%;

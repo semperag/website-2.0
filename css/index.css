@@ -11,8 +11,13 @@ iframe {
     max-height: 200vh;
     width: 100%;
     border: 0;
+    overflow: hidden;
 }
 
 #projectPage {
     min-height: 1600px;
+}
+
+.normal {
+    height: 100vh;
 }

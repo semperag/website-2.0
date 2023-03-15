@@ -10,3 +10,7 @@ body {
 #aboutInfo {
     font-size: 1.5em;
 }
+
+.w3-animate-bottom {
+    animation: 1s ease 0s normal none 1 running animatebottom;
+}
