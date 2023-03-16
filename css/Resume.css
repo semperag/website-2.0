@@ -12,5 +12,9 @@ body {
 }
 
 .w3-animate-bottom {
-    animation: 1s ease 0s normal none 1 running animatebottom;
+    animation: 1.5s ease 0s normal none 1 running animatebottom;
+}
+
+.w3-animate-left {
+    animation: 1s ease 0s normal none 1 running animateleft;
 }

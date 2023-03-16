@@ -21,3 +21,7 @@ iframe {
 .normal {
     height: 100vh;
 }
+
+.overflowHidden {
+    overflow: hidden;
+}
