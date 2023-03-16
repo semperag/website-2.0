@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js" defer></script>
+    </head>
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
+    <body class="overflowHidden">
+        <iframe src="html/Home.html" title="description" class="normal"></iframe>
+        <iframe src="html/Project.html" id="projectPage" title="description"></iframe>
+        <iframe src="html/About.html" title="description"></iframe>
+        <iframe src="html/Resume.html" title="description"></iframe>
+        <iframe src="html/Contact.html" title="description"></iframe>
+    </body>
+</html>
