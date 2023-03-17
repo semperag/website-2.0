@@ -420,5 +420,9 @@ li {
 }
 
 .w3-animate-bottom {
-    animation: 2.75s ease 0s normal none 1 running animatebottom;
+    animation: 1.75s ease 0s normal none 1 running animatebottom;
+}
+
+.hidden {
+    display: none !important;
 }

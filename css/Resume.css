@@ -18,3 +18,7 @@ body {
 .w3-animate-left {
     animation: 1s ease 0s normal none 1 running animateleft;
 }
+
+.hidden {
+    display: none;
+}

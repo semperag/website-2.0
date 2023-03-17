@@ -1,6 +1,8 @@
 body {
     background-color: rgb(33, 33, 33);
     color: rgb(240, 240, 240);
+    width: 90%;
+    overflow: hidden;
 }
 
 #aboutTitle {
@@ -17,4 +19,8 @@ body {
 
 .w3-animate-left {
     animation: 1s ease 0s normal none 1 running animateleft;
+}
+
+.hidden {
+    display: none;
 }

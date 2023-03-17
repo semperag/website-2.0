@@ -37,9 +37,9 @@ body {
 }
 
 .w3-animate-left {
-    animation: 2.5s ease 0s normal none 1 running animateleft;
+    animation: 1.5s ease 0s normal none 1 running animateleft;
 }
 
 .w3-animate-right {
-    animation: 2.5s ease 0s normal none 1 running animateright;
+    animation: 1.5s ease 0s normal none 1 running animateright;
 }
