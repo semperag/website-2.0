@@ -14,6 +14,28 @@ window.addEventListener('load', function () {
         }
     });
 
+    var projectPage = this.document.getElementById('projectPage');
+    var controller = new ScrollMagic.Controller();
+
+    var projects = projectPage.contentDocument.querySelectorAll('.project');
+    console.log(projects);
+
+    console.log('here');
+    $(projects).each(function( index ) {
+        var id = '#' + $(this).attr('id');
+
+        console.log(id);
+        console.log(projects[index]);
+        //build a scene
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: id
+        })
+        .setClassToggle(id, 'fade-in') // add class to handWave
+        .addIndicators() // this requires a plugin
+        .addTo(controller);
+    });
+});
+/*
     var contactPage = this.document.getElementById('contactPage');
     var aboutPage = this.document.getElementById('aboutPage');
     var resumePage = this.document.getElementById('resumePage');
@@ -129,3 +151,25 @@ function isInViewport(item) {
         return false;
     }
 }
+*/
+window.addEventListener('load', function () {
+    document.addEventListener('DOMContentLoaded', () => {
+    var controller = new ScrollMagic.Controller();
+
+    console.log('trying');
+    var projectPage = this.document.getElementById('projectPage');
+
+    $( ".project" ).each(function( index ) {
+        var id = '#' + $(this).attr('id');
+
+        console.log(id);
+        //build a scene
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: id
+        })
+        .setClassToggle(id, 'fade-in') // add class to handWave
+        .addIndicators() // this requires a plugin
+        .addTo(controller);
+    });
+});
+});

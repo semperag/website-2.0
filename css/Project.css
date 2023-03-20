@@ -7,10 +7,18 @@ body {
 }
 
 .project {
+    position: relative;
     margin: auto;
     height: 500px;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.098);
+
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.project.fade-in {
+    opacity: 1;
 }
 
 .projectContainer {
