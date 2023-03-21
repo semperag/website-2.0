@@ -26,7 +26,7 @@ window.addEventListener('load', function () {
 
         console.log(id);
         console.log(projects[index]);
-        //build a scene
+        
         var ourScene = new ScrollMagic.Scene({
             triggerElement: id
         })
