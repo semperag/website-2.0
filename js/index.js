@@ -19,7 +19,6 @@ window.addEventListener('load', function () {
 
     var projects = projectPage.contentDocument.querySelectorAll('.project');
     console.log(projects);
-    //
     console.log('here');
     $(projects).each(function( index ) {
         var id = '#' + $(this).attr('id');
