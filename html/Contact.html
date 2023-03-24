@@ -12,41 +12,34 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="../js/Contact.js" defer></script>
     </head>
-    <body>
-        <div id="center-view">
+    <div id="center-view">
 
-            <table id="resume" class="hidden">
-                <tbody>
-                    <form action="https://formsubmit.co/adair.sempe@gmail.com" method="POST">
-                    <tr>
-                        <th class="resume-title" scope="col">
-                            Contact me
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <textarea id="name-textarea" placeholder="Name"></textarea>
-                            <input type="hidden" name="_next" value="https://semperag.github.io/contact.html">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <textarea id="email-textarea" type="email" name="email" placeholder="Email*" required></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <textarea id="message-textarea" type="text" name="message" placeholder="Message*" required></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="send">
-                            <button id="send-button" type="submit" onClick="sendMessage()">Send</button>
-                        </td>
-                    </tr>
-                    </form>
-                </tbody>
-            </table>
-        </div>
-    </body>
+        <table id="resume">
+            <tbody>
+                <form action="https://formsubmit.co/adair.sempe@gmail.com" method="POST">
+                <tr>
+                    <td>
+                        <textarea id="name-textarea" placeholder="Name"></textarea>
+                        <input type="hidden" name="_next" value="https://semperag.github.io/contact.html">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="email-textarea" type="email" name="email" placeholder="Email*" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="message-textarea" type="text" name="message" placeholder="Message*" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="send">
+                        <button id="send-button" type="submit" onClick="sendMessage()">Send</button>
+                    </td>
+                </tr>
+                </form>
+            </tbody>
+        </table>
+    </div>
 </html>

@@ -20,19 +20,78 @@ window.addEventListener('load', function () {
     var projects = projectPage.contentDocument.querySelectorAll('.project');
     console.log(projects);
     console.log('here');
-    $(projects).each(function( index ) {
-        var id = '#' + $(this).attr('id');
 
-        console.log(id);
-        console.log(projects[index]);
-        
-        var ourScene = new ScrollMagic.Scene({
-            triggerElement: id
-        })
-        .setClassToggle(id, 'fade-in') // add class to handWave
-        .addIndicators() // this requires a plugin
-        .addTo(controller);
-    });
+    var id = this.document.getElementById('aboutTitle');
+
+    console.log(id);
+    
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#aboutAnimate'
+    })
+    .setClassToggle(id, 'slide-right') // add class to handWave
+    .addIndicators() // this requires a plugin
+    .addTo(controller);
+
+    id = this.document.getElementById('aboutPage');
+
+    console.log(id);
+    
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#aboutAnimate'
+    })
+    .setClassToggle(id, 'slide-up') // add class to handWave
+    .addIndicators() // this requires a plugin
+    .addTo(controller);
+
+
+    // RESUME ANIMATE
+    var id = this.document.getElementById('resumeTitle');
+
+    console.log(id);
+    
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#resumeAnimate'
+    })
+    .setClassToggle(id, 'slide-right') // add class to handWave
+    .addIndicators() // this requires a plugin
+    .addTo(controller);
+
+    id = this.document.getElementById('resumePage');
+
+    console.log(id);
+    
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#resumeAnimate'
+    })
+    .setClassToggle(id, 'slide-up') // add class to handWave
+    .addIndicators() // this requires a plugin
+    .addTo(controller);
+
+
+    // CONTACT ANIMATE
+    var id = this.document.getElementById('contactTitle');
+
+    console.log(id);
+    
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#contactAnimate'
+    })
+    .setClassToggle(id, 'slide-up') // add class to handWave
+    .addIndicators() // this requires a plugin
+    .addTo(controller);
+
+
+    var id = this.document.getElementById('contactPage');
+
+    console.log(id);
+    
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#contactAnimate'
+    })
+    .setClassToggle(id, 'slide-up') // add class to handWave
+    .addIndicators() // this requires a plugin
+    .addTo(controller);
+
 });
 /*
     var contactPage = this.document.getElementById('contactPage');
