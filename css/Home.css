@@ -39,9 +39,16 @@ body {
 }
 
 #profilePic {
-    background-color: rgb(255, 245, 225);
     width: 100%;
     height: 200px;
+}
+
+img {
+    max-height:100%; 
+    max-width:100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0px 100px rgb(255, 255, 255);
 }
 
 #socialMedia {
@@ -54,15 +61,15 @@ body {
 }
 
 .w3-animate-top {
-    animation: 1s ease 0s normal none 1 running animatetop;
+    animation: 1.5s ease 0s normal none 1 running animatetop;
 }
 
 .w3-animate-left {
-    animation: 1s ease 0s normal none 1 running animateleft;
+    animation: 1.5s ease 0s normal none 1 running animateleft;
 }
 
 .w3-animate-bottom {
-    animation: 1s ease 0s normal none 1 running animatebottom;
+    animation: 1.5s ease 0s normal none 1 running animatebottom;
 }
 
 .hidden {

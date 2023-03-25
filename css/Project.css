@@ -22,25 +22,32 @@ body {
 
 .projectContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.541);
-    height: 80%;
+    background-color: rgba(255, 255, 255, 0.224);
+    height: 100%;
 }
 
 .projectInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 60%;
+    flex-grow: 1;
+    width: 90%;
 }
 
 .projectLink, .hello {
     background-color: rgba(245, 245, 220, 0.808);
-    width: 40%;
-    height: 70%;
+    width: max-content;
+    max-height: 40vw;
     margin: auto;
+    border: 2px solid white;
+}
+
+img {
+    max-height: 100%;
+    width: 100%;
 }
 
 .w3-animate-left {
