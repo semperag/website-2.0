@@ -14,12 +14,27 @@ window.addEventListener('load', function () {
         }
     });
 
+    var controller = new ScrollMagic.Controller();
+/*
     var projectPage = this.document.getElementById('projectPage');
     var controller = new ScrollMagic.Controller();
 
     var projects = projectPage.contentDocument.querySelectorAll('.project');
     console.log(projects);
     console.log('here');
+*/
+    var id = this.document.getElementById('project1');
+
+    console.log(id);
+    
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#projectAnimate1'
+    })
+    .setClassToggle(id, 'slide-right') // add class to handWave
+    .addIndicators() // this requires a plugin
+    .addTo(controller);
+
+
 
     var id = this.document.getElementById('aboutTitle');
 

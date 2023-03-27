@@ -9,9 +9,9 @@ body {
 .project {
     position: relative;
     margin: auto;
-    height: 500px;
+    height: max-content;
     width: 90%;
-    background-color: rgba(255, 255, 255, 0.098);
+    background-color: rgba(255, 255, 255, 0);
 
     transition: all 1s ease-out;
 }
@@ -27,6 +27,8 @@ body {
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.224);
     height: 100%;
+    width: 95%;
+    margin: auto;
 }
 
 .projectInfo {
@@ -35,19 +37,40 @@ body {
     justify-content: space-evenly;
     flex-grow: 1;
     width: 90%;
+    margin: auto;
+    color: white;
+}
+
+.projectTitle {
+    font-size: 2em;
 }
 
 .projectLink, .hello {
     background-color: rgba(245, 245, 220, 0.808);
-    width: max-content;
-    max-height: 40vw;
+    width: 85%;
+    max-width: 300px;
+    max-height: fit-content;
+    height: min-content;
+    min-height: 40%;
     margin: auto;
+    margin-top: 10px;
     border: 2px solid white;
 }
 
 img {
-    max-height: 100%;
+    height: 100%;
     width: 100%;
+}
+
+.rightSide {
+    transform: translateX(-110%);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.rightSide.slide-right {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .w3-animate-left {
