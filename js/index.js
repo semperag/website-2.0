@@ -34,6 +34,27 @@ window.addEventListener('load', function () {
     .addIndicators() // this requires a plugin
     .addTo(controller);
 
+    var id = this.document.getElementById('project2');
+
+    console.log(id);
+    
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#projectAnimate2'
+    })
+    .setClassToggle(id, 'slide-right') // add class to handWave
+    .addIndicators() // this requires a plugin
+    .addTo(controller);
+
+    var id = this.document.getElementById('project3');
+
+    console.log(id);
+    
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#projectAnimate3'
+    })
+    .setClassToggle(id, 'slide-right') // add class to handWave
+    .addIndicators() // this requires a plugin
+    .addTo(controller);
 
 
     var id = this.document.getElementById('aboutTitle');
@@ -107,6 +128,12 @@ window.addEventListener('load', function () {
     .addIndicators() // this requires a plugin
     .addTo(controller);
 
+
+    let aboutInfo = this.document.getElementById('aboutPage').contentDocument.getElementById('aboutInfo');
+    let aboutInfoHeight = aboutInfo.offsetHeight + 300;
+
+    console.log('height: ' + aboutInfoHeight);
+    this.document.getElementById('aboutPage').style.height = ''+aboutInfoHeight+'px';
 });
 /*
     var contactPage = this.document.getElementById('contactPage');
