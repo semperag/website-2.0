@@ -41,7 +41,7 @@ window.addEventListener('load', function () {
     var ourScene = new ScrollMagic.Scene({
         triggerElement: '#projectAnimate2'
     })
-    .setClassToggle(id, 'slide-right') // add class to handWave
+    .setClassToggle(id, 'slide-left') // add class to handWave
     .addIndicators() // this requires a plugin
     .addTo(controller);
 
@@ -128,12 +128,19 @@ window.addEventListener('load', function () {
     .addIndicators() // this requires a plugin
     .addTo(controller);
 
-
     let aboutInfo = this.document.getElementById('aboutPage').contentDocument.getElementById('aboutInfo');
     let aboutInfoHeight = aboutInfo.offsetHeight + 300;
 
     console.log('height: ' + aboutInfoHeight);
     this.document.getElementById('aboutPage').style.height = ''+aboutInfoHeight+'px';
+    
+    window.onresize = function(event) {
+        let aboutInfo = this.document.getElementById('aboutPage').contentDocument.getElementById('aboutInfo');
+        let aboutInfoHeight = aboutInfo.offsetHeight + 300;
+
+        console.log('height: ' + aboutInfoHeight);
+        this.document.getElementById('aboutPage').style.height = ''+aboutInfoHeight+'px';
+    }
 });
 /*
     var contactPage = this.document.getElementById('contactPage');
